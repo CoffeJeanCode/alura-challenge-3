@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1><image src="./hearts.svg" /> AluraGeek</h1>
+    </header>
+
+    <main class="container">
+      <section class="products">
+        <h2>MIS PRODUCTOS:</h2>
+        <div class="product-list"></div>
+      </section>
+
+      <aside class="add-product">
+        <h2>AGREGAR PRODUCTO:</h2>
+        <form id="add-product-form">
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Nombre del producto..."
+            required
+          />
+
+          <input
+            type="number"
+            id="product-price"
+            placeholder="Precio..."
+            required
+          />
+          <input
+            type="url"
+            id="product-image"
+            placeholder="URL de la imagen..."
+            required
+          />
+          <div class="button-group">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p><image src="./hearts.svg" /> AluraGeek</p>
+      <p>
+        DESARROLLADO POR JEAN PIERRE ORTIZ <br />
+        ALURA LATAM - 202X
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
